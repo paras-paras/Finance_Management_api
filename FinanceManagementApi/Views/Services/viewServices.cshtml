@@ -1,0 +1,43 @@
+﻿@model IEnumerable<FinanceManagementApi.Models.ServiceRecord>
+
+@{
+    ViewBag.Title = "viewServices";
+}
+
+<h2>view All Services</h2>
+
+<p>
+    @Html.ActionLink("Add New Service", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Features)
+        </th>
+        <th>Update </th>
+        <th>Delete</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Features)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) </td>
+        <td>
+            
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+
+<a href="@Url.Action("welcome","Head")">Back to the working area </a>

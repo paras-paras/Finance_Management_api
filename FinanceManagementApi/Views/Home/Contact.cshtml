@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<section class="w3l-contact3" id="contact">
+    <div class="contact-form section-gap py-5">
+        <div class="container py-md-3">
+            <div class="contacts12-main">
+                <div class="heading text-center mx-auto">
+                    <h3 class="head">Keep In Touch With Us.</h3>
+
+                </div>
+
+                <form action="UserMessage" method="post">
+                    <div class="main-input pt-5 mt-3">
+                        <div>
+
+                            <input type="text" name="user_Name" id="user_Name" placeholder="Your Name" class="contact-input">
+                        </div>
+                        <div>
+
+                            <input type="email" name="user_Email" id="user_Email" placeholder="Your Email id" class="contact-input" required="">
+                        </div>
+                        <div>
+
+                            <input type="text" name="user_Contact" id="user_Contact" placeholder="Contact" class="contact-input">
+                        </div>
+                    </div>
+
+                    <textarea class="contact-textarea" name="user_Message" id="user_Message" placeholder="Type your message here" required=""></textarea>
+                    <div class="text-center">
+                        <button class="btn btn-secondary btn-theme2">Submit Now</button>
+                    </div>
+                </form>
+                <div class="column2 pt-5 mt-5">
+                    <div class="contact-para contact-info-align">
+                        <h4 class="info mb-3">Location</h4>
+                        <p>
+                            #135 block, Barnard St.<br>
+                            Papatoe, NZ
+                        </p>
+                    </div>
+
+                    <div class="contact-info-align">
+                        <h4 class="info mb-3">Email</h4>
+                        <p><a href="mailto:example@mail.com"> admin@financemang.com</a></p>
+
+                    </div>
+                    <div class="contact-info-align">
+                        <h4 class="info mb-3">Phone</h4>
+                        <p><a href="#"> +64 45 67 89</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50998.83846861011!2d174.8204502791151!3d-36.975729957520834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4e72a1fa46d1%3A0x500ef6143a2f520!2sPapatoetoe%2C%20Auckland%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1607263509623!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</section>
